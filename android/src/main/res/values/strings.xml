@@ -1,0 +1,362 @@
+<resources>
+    <string name="app_name">中国空网</string>
+
+    <!--主页-->
+    <string name="msg">消息通知</string>
+    <string name="msg_center">消息中心</string>
+    <string name="fly_history">历史飞行报告</string>
+    <string name="work">工作</string>
+    <string name="workcenter">工作中心</string>
+    <string name="workdetail">工作详情</string>
+    <string name="areadetail">空域详情</string>
+    <string name="about">关于我们</string>
+    <string name="fast_login">快速登录</string>
+    <string name="ID">ID:</string>
+    <string name="verifieding">认证中</string>
+    <string name="you_not_agree_permission">您没有同意权限，可能部分功能无法使用！</string>
+    <string name="no_address_message">暂无当前位置信息</string>
+    <string name="theme">主题</string>
+    <string name="map_mode">地图模式</string>
+    <string name="cavas_setting">图层设置</string>
+    <string name="layer_setting">图层设置</string>
+    <string name="jfq">禁飞区</string>
+    <string name="jfq_tip">政府公告临时管制的区域，在规定时限内，未经飞行管制部门许可的航空器，不得飞入该区域。</string>
+    <string name="wxq">危险区</string>
+    <string name="wxq_tip">指在机场、航路、航线附近划设的供对空射击或者发射使用的空间。在规定时限内，禁止无关航空器飞入空中危险区。</string>
+    <string name="xzq">限制区</string>
+    <string name="xzq_tip">指位于航路、航线附近的军事要地、兵器试验场上空划设的空间和航空兵部队、飞行院校等航空单位的机场飞行空域。在规定时限内，未经飞行管制部门许可的航空器，不得飞入空中限制区。</string>
+    <string name="jkq">机场净空区</string>
+    <string name="jkq_tip">《中华人民共和国民用航空法》规定的保障机场内飞机安全起降的保护范围，根据各地政府通告可知划定的范围一般为机场跑道中心线两侧各10公里、跑道两端20公里范围，各地区根据实际情况个有不同。</string>
+    <string name="gdfc">固定空域</string>
+    <string name="lsrwq">临时任务区</string>
+    <string name="back_again_to_exit">再按一次后退键退出程序</string>
+    <string name="location_not_use">您没有同意定位权限，定位功能无法使用</string>
+    <string name="your_commit_identity_passed">您提交的实名认证已审核通过</string>
+    <string name="verified_passed">认证通过</string>
+    <string name="verified_reject">实名认证未通过</string>
+    <string name="your_commit_identity_reject">您提交的实名认证未审核通过，请您修改资料后重新提交认证。</string>
+    <string name="know">知道了</string>
+    <string name="comfirm">确定</string>
+    <string name="messag_expired">消息已过期！</string>
+    <string name="your_company_have_new_area">您所在的公司解锁了新的空域，请及时查看</string>
+    <string name="you_have">您有</string>
+    <string name="unread_msg">条未读消息</string>
+    <string name="gps_tip">请打开您的GPS位置信息，让中国空网获取到您的位置</string>
+    <string name="to_setting">去设置</string>
+    <string name="tuceng">图层</string>
+    <string name="xiaoxi">消息</string>
+
+
+    <!--个人资料页面-->
+    <string name="head_portrait">头像</string>
+    <string name="nick_name">昵称</string>
+    <string name="real_verified">实名认证</string>
+    <string name="verified">认证</string>
+    <string name="age">年龄</string>
+    <string name="birth">出生日期</string>
+    <string name="sex">性别</string>
+    <string name="man">男</string>
+    <string name="woman">女</string>
+    <string name="verified_no">未认证</string>
+    <string name="to_verified">去认证</string>
+    <string name="verified_ready">已认证</string>
+    <string name="verified_fail">认证失败</string>
+    <string name="verified_wait">认证中</string>
+    <string name="update_pwd">修改密码</string>
+    <string name="persional_infomation">个人资料</string>
+    <string name="change_phone">修改手机号</string>
+    <string name="exit_login">退出登录</string>
+    <string name="flying_all_time">飞行总时间</string>
+    <string name="flying_all_num">飞行总架次</string>
+    <string name="jiaci">架次</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+
+    <!--实名认证-->
+    <string name="realname">姓名</string>
+    <string name="type_of_paperwork">证件类型</string>
+    <string name="num_of_paperwork">证件编号</string>
+    <string name="id_card">身份证</string>
+    <string name="sc_paperwork_photo">请上传证件照片</string>
+    <string name="verified_tip">验证前请仔细确认信息，确认无误后提交验证;\n实名认证需要一段时间，请耐心等待。</string>
+    <string name="upload_fail_retry">信息上传失败，请重试</string>
+    <string name="upload_succeed">信息上传成功</string>
+    <string name="relaname_not_empty">真实姓名不能为空</string>
+    <string name="document_num_not_match_format">证件编号不符合格式</string>
+    <string name="msg_upload_succeed">认证信息上传成功</string>
+    <string name="pending">认证审核中</string>
+    <string name="pending_tip">您已成功上传个人资料，请耐心等待，我们将在48小时内对您的信息进行审核，审核过程中如需修改个人资料请点击</string>
+    <string name="confirm">确认</string>
+    <string name="skip_verified">跳过认证</string>
+    <string name="yl">预览</string>
+    <string name="to_personal_center">前往个人中心</string>
+    <string name="success">成功</string>
+    <!--搜索-->
+    <string name="search">搜索</string>
+    <string name="more_histroy">更多历史记录</string>
+    <string name="clear_histroy">清空历史记录</string>
+    <string name="no_msg_now">暂无信息</string>
+
+    <!--手机页面-->
+    <string name="input_phone_num">请输入手机号</string>
+    <string name="input_new_phone_num">请输入新的手机号码</string>
+    <string name="phone_num">手机号</string>
+    <string name="sms_will_send_to">验证码将发送到</string>
+    <string name="input_sms_code">请输入验证码</string>
+    <string name="input_pwd">请输入密码</string>
+    <string name="four_sms_code">4位验证码</string>
+    <string name="send_sms_code">发送验证码</string>
+    <string name="send_retry">s后重发</string>
+    <string name="use_pwd_login">使用密码登录</string>
+    <string name="use_smscode_login">使用验证码登录</string>
+    <string name="phone_tip1">确认即代表同意并遵守</string>
+    <string name="phone_tip2">中国空网用户服务协议</string>
+    <string name="and">和</string>
+    <string name="phone_tip4">隐私条款</string>
+    <string name="login">登录</string>
+    <string name="input_sms">请输入验证码</string>
+    <string name="phone_empty">手机号不能为空</string>
+    <string name="phone_not_fit">手机号不符合格式</string>
+    <string name="phone_update_succeed">手机号修改成功</string>
+    <string name="yznum">验证码</string>
+    <string name="send_yz">发送验证码</string>
+    <string name="get_again">s后重发</string>
+    <string name="smscode_empty">验证码不能为空</string>
+    <string name="sms_no_match">验证码不符合格式</string>
+
+    <!--修改密码界面-->
+    <string name="set_pwd">请设置密码</string>
+    <string name="input_pwd_agin">请再次输入密码</string>
+    <string name="two_pwd_not_equals">两次输入密码不一致</string>
+    <string name="pwd_set_success">密码设置成功</string>
+    <string name="update_pwd_succeed">密码修改成功</string>
+    <string name="set_pwd_tip">须包含数字、字母、符号中至少2种元素\n密码长度需为6-12位</string>
+    <string name="input_new_pwd">请输入新密码</string>
+
+    <!--密码登录-->
+    <string name="pwd_empty">密码不能为空</string>
+    <string name="pwd_format">密码长度为6到12位,须包含数字、字母、符号至少2种元素</string>
+
+    <!--工作中心-->
+    <string name="airlook">埃洛克航空</string>
+    <string name="area_time">空域时间：</string>
+    <string name="work_center_arae">作业面积：</string>
+    <string name="work_center_length">作业长度：</string>
+    <string name="square_kilometer">平方公里</string>
+
+    <!--工作详情-->
+    <string name="call_custom">呼叫客服</string>
+    <string name="call">呼叫</string>
+    <string name="cancel">取消</string>
+    <string name="hello">你好</string>
+    <string name="calling">电话正在拨入</string>
+    <string name="working_area">作业面积</string>
+    <string name="maximum_height">最大对地高度/m</string>
+    <string name="working_aircraft">作业飞机</string>
+    <string name="you_can_not_fly_now">空军尚未充分授权，请联系中国空网</string>
+    <string name="you_can_fly_now">空军已充分授权，请实时关注空域状态</string>
+    <string name="second_huifu">后可以进行飞行作业</string>
+    <string name="second_end">后终止空域授权，请届时停止飞行</string>
+    <string name="km">千米</string>
+    <string name="mi">米</string>
+    <string name="work_detail_length">作业长度</string>
+    <string name="work_detail_area">作业面积</string>
+    <string name="zonglan">总览</string>
+    <string name="dingwei">定位</string>
+    <string name="detail">详情</string>
+    <!--邀请弹窗-->
+    <string name="invite_you_join">邀请您加入</string>
+    <string name="you_ready_join">您已加入</string>
+    <string name="you_ready_reject_join">您已拒绝加入</string>
+    <string name="reject">拒绝</string>
+    <string name="accept">接受</string>
+
+
+    <!--关于我们-->
+    <string name="about_us">关于我们</string>
+    <string name="kw_version">中国空网v1.0.0</string>
+    <string name="about_tip">空网科技（北京）有限公司版权所有\nCopyright © 2018 airspace technology(beijing)Co.Ltd</string>
+
+    <!--更换手机号前的提醒页面-->
+    <string name="current_phone">当前的手机号码为</string>
+    <string name="update_phone">更换手机号</string>
+    <string name="update_phone_tip">更换后，需要使用新手机号登录\n仅支持修改为未注册手机号</string>
+
+    <!--消息通知页面-->
+    <string name="notification">消息通知</string>
+    <string name="del">删除</string>
+
+    <!--h5页面题目-->
+    <string name="china_kwfwxy">中国空网用户服务协议</string>
+    <string name="china_kwysbh">中国空网隐私保护声明</string>
+
+    <string name="net_not_good">当前网络状态不佳，请稍后再试</string>
+    <string name="net_is_disconnct">网络已断开，请检查网络</string>
+    <string name="good">好的</string>
+    <string name="you_get_notification">您收到了一条邀请信息</string>
+
+
+    <!--版本更新-->
+    <string name="version_update">版本更新</string>
+    <string name="version_update_tip">版本来啦！更多功能提供，体验更流畅。马上更新吧！</string>
+    <string name="experience_now">立即体验</string>
+
+    <!--百度人脸-->
+    <string name="detect_no_face">未检测到人脸</string>
+    <string name="detect_face_in">拿起手机，眨眨眼</string>
+    <string name="detect_zoom_in">手机拿近一点</string>
+    <string name="detect_zoom_out">手机拿远一点</string>
+    <string name="detect_head_up">头抬高些</string>
+    <string name="detect_head_down">头放低些</string>
+    <string name="detect_head_left">向左调整下头部角度</string>
+    <string name="detect_head_right">向右调整下头部角度</string>
+    <string name="detect_occ_face">脸部有遮挡</string>
+    <string name="detect_occ_left_eye">左眼有遮挡</string>
+    <string name="detect_occ_right_eye">右眼有遮挡</string>
+    <string name="detect_occ_nose">鼻子有遮挡</string>
+    <string name="detect_occ_mouth">嘴部有遮挡</string>
+    <string name="detect_left_contour">左脸颊有遮挡</string>
+    <string name="detect_right_contour">右脸颊有遮挡</string>
+    <string name="detect_chin_contour">下巴有遮挡</string>
+    <string name="detect_low_light">光线再亮些</string>
+    <string name="detect_keep">请握稳手机，视线平视手机</string>
+    <string name="detect_standard">请正对手机</string>
+    <string name="detect_timeout">检测超时</string>
+    <string name="liveness_eye">眨眨眼</string>
+    <string name="liveness_eye_left">请眨眨左边眼睛</string>
+    <string name="liveness_eye_right">请眨眨右边眼睛</string>
+    <string name="liveness_mouth">张张嘴</string>
+    <string name="liveness_head_left">向左缓慢转头</string>
+    <string name="liveness_head_right">向右缓慢转头</string>
+    <string name="liveness_head_left_right">摇摇头</string>
+    <string name="liveness_head_up">缓慢抬头</string>
+    <string name="liveness_head_down">缓慢低头</string>
+    <string name="liveness_good">非常好</string>
+    <string name="face_tip">提示：正对手机，更容易成功</string>
+    <string name="guanwen">官文</string>
+    <string name="quit_Verified">放弃认证</string>
+
+    <!--无人机列表-->
+    <string name="company_aircraft">公司飞机</string>
+
+    <!--无人机详情-->
+    <string name="weight_empty">空机重量</string>
+    <string name="max_fly_heigth">最大飞行高度</string>
+    <string name="max_fly_time">最大飞行时间</string>
+    <string name="find_device">找回我的设备</string>
+    <string name="history">历史记录</string>
+    <string name="kg">kg</string>
+
+    <!--寻找设备-->
+    <string name="standard">标准</string>
+    <string name="satellite">卫星</string>
+    <string name="finally_time">最后位置时间：</string>
+    <string name="finally_latlng">最后位置坐标：</string>
+    <string name="find_device_bottom_tip">云匣子M1云计算服务提供商</string>
+    <string name="now_device_location">当前设备位置</string>
+
+    <!--消息中心-->
+    <string name="area_msg">空域信息：</string>
+    <!--消息详情-->
+    <string name="current_status">当前状态</string>
+    <string name="airspace_time">空域时间</string>
+    <string name="airspace_area">空域面积</string>
+    <string name="drone">无人机</string>
+    <string name="msg_detail">消息详情</string>
+
+    <!--添加飞行计划-->
+    <string name="start_time">开始时间</string>
+    <string name="end_time">结束时间</string>
+    <string name="fly_height">飞行高度：</string>
+    <string name="remark">备注：</string>
+    <string name="please_input_msg">请输入备注信息(100字以内)</string>
+    <string name="please_chose_time">请选择时间</string>
+    <string name="fly_plan">飞行计划</string>
+    <string name="commit">提交计划</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank frdagment</string>
+
+    <!--飞行计划提交记录-->
+    <string name="plan_histroy">飞行计划历史记录</string>
+    <string name="chose_time_not_fit">选择时间不在范围时间内</string>
+    <string name="start_not_bigger_end">开始时间不能大于结束时间</string>
+    <string name="end_not_smaller_start">结束时间不能小于开始时间</string>
+
+    <!--飞行计划历史记录-->
+    <string name="time">时间</string>
+    <string name="content">内容</string>
+    <string name="reporter">申报人：</string>
+    <string name="plan_fly_time">计划飞行时间：</string>
+    <string name="plan_land_time">计划降落时间：</string>
+
+    <!--飞行历史-->
+    <string name="fly_history_">飞行历史</string>
+    <string name="all_time">总时长：</string>
+    <string name="fly_length">飞行距离：</string>
+    <string name="flying_plane">无人机</string>
+    <string name="commit_fly_plan_success">提交飞行计划成功</string>
+    <string name="connection_kongjun">正在联系空军</string>
+    <string name="please_chose_start_date">请选择开始日期</string>
+    <string name="please_chose_end_date">请选择结束日期</string>
+    <string name="to_fly">去报飞</string>
+    <string name="you_have_a_fly_plan">明日有可飞空域，请您进入所飞的空域详情并上报飞行计划。</string>
+    <string name="no_yxz_data">暂无云匣子数据</string>
+    <string name="no_binding_device">暂未绑定任何设备</string>
+    <string name="already_apply">此空域已申报飞行计划</string>
+    <string name="welcome_to_airspace">Hello!\n欢迎使用中国空网</string>
+    <string name="input_login_pwd">请输入登录密码</string>
+    <string name="input_login_pwd_agin">请再次输入登录密码</string>
+    <string name="input_phone">请输入手机号码</string>
+    <string name="take_off_time">起飞时间</string>
+    <string name="land_time">降落时间</string>
+    <string name="all_plane">所在公司下的所有无人机</string>
+    <string name="do_not_enter_illegal_characters">请勿输入表情等非法字符</string>
+    <string name="unsubscribe_tip">设置免打扰以后，您将接收不到此空域最新消息的推送通知或者短信提醒，确定设置为免打扰模式吗？</string>
+    <string name="subscribe_tip">选择关注空域后，将会接收到该空域的推送信息</string>
+
+    <string name="plane_take_off_please_attention">无人机已起飞，请随时关注空域状态</string>
+    <string name="flyer_cancale_fly_plan">飞手取消飞行计划</string>
+    <string name="air_force_banned_from_flying">空军禁止飞行</string>
+    <string name="wait_take_off">空域已解锁，等待起飞</string>
+    <string name="drone_has_taken_off">无人机已起飞</string>
+    <string name="drone_has_landed">无人机已降落</string>
+    <string name="fly_height1">飞行高度</string>
+    <string name="attention_status">,请随时关注空域状态</string>
+    <string name="reservation_airport">预约飞场</string>
+    <string name="cound_reser_a_week">可预定一周以内的时间</string>
+    <string name="airport_introduction">飞场简介</string>
+    <string name="chose_ording_date">选择您要预定的日期</string>
+    <string name="gd_map">高德地图</string>
+    <string name="open_time">开放时间：</string>
+    <string name="bd_map">百度地图</string>
+    <string name="tencent_map">腾讯地图</string>
+    <string name="distance_you">距您</string>
+    <string name="verified_can_book_airport">实名认证通过后,即可预约飞场</string>
+    <string name="cound_ording">可预定</string>
+    <string name="already_ording">已预定</string>
+    <string name="surrounding_image">环境图片</string>
+    <string name="book_success">预约成功</string>
+    <string name="chose_book_date">请选择预约时间</string>
+    <string name="no_open_gps">未开启定位服务</string>
+    <string name="please_update_quit">为不影响正常使用，请尽快升级</string>
+    <string name="update_error">更新路径错误</string>
+    <string name="new_version">新版本</string>
+    <string name="update_tip">为不影响使用，请尽快升级！</string>
+    <string name="fcyd">飞场预订</string>
+    <string name="you_no_collection_airspace">您尚未关注空域</string>
+    <string name="flying">正在飞行</string>
+    <string name="fly_path">飞行轨迹</string>
+    <string name="airspcae_list">空域列表</string>
+    <string name="airarea_about_not">暂无关注空域，请前往关注</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="fly_dialog">是否已经准备完毕，随时可以飞行</string>
+    <string name="fixedflyfield">固定空域</string>
+    <string name="fixedflyfield_tip">拥有空军专门批准的科学试验空域，并建有无人机起降跑道，未航模爱好者，企业和科研机构提供无人机试飞验证和应用测试。</string>
+    <string name="temporarymissionarea">临时任务区</string>
+    <string name="temporarymissionarea_tip">中国空网申请的任务空域，在规定的时间内，未经空域所属公司许可的航空器，不得飞入该区域。</string>
+    <string name="lsjfq">临时禁飞区</string>
+    <string name="lsjfq_tip">政府公告临时管制的区域，在规定时限内，未经飞行管制部门许可的航空器，不得飞入该区域。</string>
+
+</resources>

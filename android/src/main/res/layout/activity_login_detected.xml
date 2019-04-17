@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (C) 2017 Baidu, Inc. All Rights Reserved.
+  -->
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitecolor">
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="100px">
+
+        <com.baidu.aip.face.TexturePreviewView
+            android:id="@+id/preview_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:id="@+id/camera_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff" />
+
+    <com.airlook.kwapp.airlook.bdface.widget.FaceRoundView
+        android:id="@+id/rect_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/closeIv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:src="@mipmap/detect_close"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/success_image"
+        android:layout_width="@dimen/success_width"
+        android:layout_height="@dimen/success_width"
+        android:src="@mipmap/icon_success"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/texture_view"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120px"
+        android:background="@drawable/face_tvresult_shape"
+        android:paddingBottom="10px"
+        android:paddingLeft="40px"
+        android:paddingRight="40px"
+        android:paddingTop="10px"
+        android:textColor="@color/whitecolor"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+    <TextView
+        style="@style/tv_24_fff"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="300px"
+        android:background="@drawable/face_tvtip_shape"
+        android:gravity="center"
+        android:lineSpacingMultiplier="1.2"
+        android:paddingBottom="10px"
+        android:paddingLeft="20px"
+        android:paddingRight="20px"
+        android:paddingTop="10px"
+        android:text="@string/face_tip" />
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        style="@style/tv_24_fff"
+        android:textSize="15sp"
+        android:textColor="@color/color_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="110px"
+        android:gravity="center"
+        android:paddingBottom="10px"
+        android:paddingLeft="40px"
+        android:paddingRight="40px"
+        android:paddingTop="10px"
+        android:text="@string/cancel" />
+
+</com.zhy.autolayout.AutoRelativeLayout>
