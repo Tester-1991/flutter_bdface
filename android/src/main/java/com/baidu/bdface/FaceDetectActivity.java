@@ -28,6 +28,9 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.baidu.AddFaceInfoModel;
+import com.baidu.FlutterBdfacePlugin;
+import com.baidu.NetObserver;
 import com.baidu.aip.FaceSDKManager;
 import com.baidu.aip.ImageFrame;
 import com.baidu.aip.face.CameraImageSource;
@@ -65,12 +68,15 @@ import org.json.JSONObject;
 import java.io.File;
 import java.io.IOException;
 import java.lang.ref.WeakReference;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 import androidx.appcompat.app.AppCompatActivity;
 import io.reactivex.Observable;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.Disposable;
+import io.reactivex.schedulers.Schedulers;
 import okhttp3.MediaType;
 import okhttp3.MultipartBody;
 import okhttp3.RequestBody;
@@ -317,6 +323,8 @@ public class FaceDetectActivity extends AppCompatActivity {
                             //如果状态是注册 或者注册并返回结果 或者是首页注册的
                             if (getIntent().getStringExtra(EXTRA_KEY_FROM).equals(REGISTFORRESULT)
                                     || getIntent().getStringExtra(EXTRA_KEY_FROM).equals(REGIST)) {
+
+
                                 //注册
                                 String facePath = ImageSaveUtil.loadCameraBitmapPath(FaceDetectActivity.this
                                         , "head_tmp.jpg");
@@ -792,9 +800,8 @@ public class FaceDetectActivity extends AppCompatActivity {
 
     //网络请求人脸注册
     private void faceReg(File file) {
-        String username = PreferenceUtil.getLong(Constant.USERID) + "";
+        String username = PreferenceUtil.getString(Constant.USERID);
         String uid = username;
-
 
         APIService.getInstance().reg(new OnResultListener<RegResult>() {
             @Override
@@ -803,9 +810,12 @@ public class FaceDetectActivity extends AppCompatActivity {
                 Gson gson = new Gson();
                 BdRegResultModel bdRegResultModel = gson.fromJson(result.getJsonRes(), BdRegResultModel.class);
                 if (bdRegResultModel.getError_code() == 0) {  //如果错误码为0 上传照片给后台
+                    Log.e("bdface", "uploadImage----");
                     String faceToken = bdRegResultModel.getResult().getFace_token();
+                    Log.e("bdface", "faceToken----" + faceToken);
                     uploadImage(file, faceToken);
                 } else {
+                    Log.e("bdface", "getError_code!=0----");
                     onRefreshSuccessView(true, false);
                     hideResultdelay();
                 }
@@ -813,6 +823,7 @@ public class FaceDetectActivity extends AppCompatActivity {
 
             @Override
             public void onError(FaceError error) {
+                Log.e("bdface", "error----" + error.getErrorMessage());
                 if (error.getErrorCode() == 110) {
                     initBdFace();
                 }
@@ -833,43 +844,45 @@ public class FaceDetectActivity extends AppCompatActivity {
 
     Disposable disposable;
 
-//    /**
+    //    /**
 //     * 补全照片信息接口
 //     */
-//    public void addFaceInfo(String faceToken, String url) {
-//        AddFaceInfoModel addFaceInfoModel = new
-//                AddFaceInfoModel(faceToken, url);
-//        Gson gson = new Gson();
-//        String jStr = gson.toJson(addFaceInfoModel, AddFaceInfoModel.class);
-//        RequestBody requestBody =
-//                RequestBody.create(okhttp3.MediaType.parse("application/json; charset=utf-8"), jStr);
-//        Net.getAirlookService().addFace(requestBody)
-//                .subscribeOn(Schedulers.io())
-//                .observeOn(AndroidSchedulers.mainThread())
-//                .subscribe(new NetObserver<Object>() {
-//                    @Override
-//                    public void doOnSuccess(Object o) {
-//                    }
-//
-//                    @Override
-//                    public void doOnNullData() {
-//                        super.doOnNullData();
-//                        onRefreshSuccessView(true, true);
-//                        PreferenceUtil.putInt(Constant.FACEREG, Constant.FACEALREADREG);
-//                        //如果是首页注册 返回成功结果值
-//                        if (getIntent().getStringExtra(EXTRA_KEY_FROM).equals(AppData.IntentSource.FROM_MAINACTIVITY_REGISTER))
-//                            setResult(RESULT_OK);
-//                        finish();
-//                    }
-//
-//                    @Override
-//                    public void onError(Throwable e) {
-////                        super.onError(e);
-//                        onRefreshSuccessView(true, false);
-//                        hideResultdelay();
-//                    }
-//                });
-//    }
+    public void addFaceInfo(String faceToken, String url) {
+        AddFaceInfoModel addFaceInfoModel = new
+                AddFaceInfoModel(faceToken, url);
+        Gson gson = new Gson();
+        String jStr = gson.toJson(addFaceInfoModel, AddFaceInfoModel.class);
+        RequestBody requestBody =
+                RequestBody.create(okhttp3.MediaType.parse("application/json; charset=utf-8"), jStr);
+        Net.getAirlookService().addFace(requestBody)
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(new NetObserver<Object>() {
+                    @Override
+                    public void doOnSuccess(Object o) {
+                        Log.e("bdface", "不全照片" + o.toString());
+                    }
+
+                    @Override
+                    public void doOnNullData() {
+                        super.doOnNullData();
+                        onRefreshSuccessView(true, true);
+                        PreferenceUtil.putInt(Constant.FACEREG, Constant.FACEALREADREG);
+                        //如果是首页注册 返回成功结果值
+                        if (getIntent().getStringExtra(EXTRA_KEY_FROM).equals(REGIST)) {
+                            finish();
+                        }
+                    }
+
+                    @Override
+                    public void onError(Throwable e) {
+//                        super.onError(e);
+                        Log.e("bdface", "不全照片错误" + e.getMessage());
+                        onRefreshSuccessView(true, false);
+                        hideResultdelay();
+                    }
+                });
+    }
 
     /**
      * 向服务器上传图片
@@ -894,9 +907,14 @@ public class FaceDetectActivity extends AppCompatActivity {
 //                        intent.putExtra(VerifiedActivity.RESULT_KEY_FACEURL
 //                                , response.body().getData().getDomain() + "/" + response.body().getData().getImageUrl());
 //                        setResult(RESULT_OK, intent);
+                        Log.e("bdface","图片上传成功");
+                        Map<String, Object> map = new HashMap<>();
+                        map.put("FACETOKEN", faceToken);
+                        map.put("FACEURL", response.body().getData().getDomain() + "/" + response.body().getData().getImageUrl());
+                        FlutterBdfacePlugin.resultData(map);
                         finish();
                     } else {  //如果只是注册 或者是主页的人脸注册 则应该调用补全照片信息的接口
-//                        addFaceInfo(faceToken, response.body().getData().getDomain() + "/" + response.body().getData().getImageUrl());
+                        addFaceInfo(faceToken, response.body().getData().getDomain() + "/" + response.body().getData().getImageUrl());
                     }
                 } else {
                     onRefreshSuccessView(true, false);

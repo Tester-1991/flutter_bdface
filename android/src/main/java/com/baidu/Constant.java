@@ -1,5 +1,7 @@
 package com.baidu;
 
+import android.util.Log;
+
 /**
  * 常量类
  * Created by LL on 2018/6/14/014.
@@ -8,7 +10,7 @@ package com.baidu;
 public class Constant {
 
     //token
-    public static final String TOKEN = "Token";
+    public static final String TOKEN = "TOKEN";
 
     //需要改动的东西 友盟不需要改变
     public static final String BASEURL = getBASEURL();
@@ -29,7 +31,7 @@ public class Constant {
     public static final String MOBILE = "mobile";
 
     //userId
-    public static final String USERID = "userId";
+    public static final String USERID = "USERID";
 
     //真实姓名
     public static final String IDENTITYNAME = "identityName";
@@ -120,10 +122,10 @@ public class Constant {
     public static String getBASEURL() {
 
         if (BuildConfig.DEBUG) {
-
+            Log.e("bdface","BuildConfig.DEBUG");
             return "http://testapp.airspace.cn/api/";
         } else {
-
+            Log.e("bdface","BuildConfig.RELEASE");
             return "http://app.airspace.cn/api/";
         }
     }

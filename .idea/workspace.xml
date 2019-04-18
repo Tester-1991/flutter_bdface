@@ -4,70 +4,12 @@
     <list default="true" id="cbec630f-f165-420b-9031-ac8e48dfa19a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/flutter_bdface/BaseModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/BaseModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/flutter_bdface/BdFaceUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/BdFaceUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/flutter_bdface/BdRegResultModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/BdRegResultModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/flutter_bdface/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/flutter_bdface/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/Constant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/flutter_bdface/FlutterBdfacePlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/FlutterBdfacePlugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/flutter_bdface/Net.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/Net.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/flutter_bdface/PreferenceUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/PreferenceUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/flutter_bdface/StringUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/StringUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/flutter_bdface/ToastUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/ToastUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/flutter_bdface/UpLoadImageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/UpLoadImageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/flutter_bdface/UpLoadingModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/UpLoadingModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/flutter_bdface/bdface/APIService.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/bdface/APIService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/flutter_bdface/bdface/FaceDetectActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/bdface/FaceDetectActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/flutter_bdface/bdface/exception/FaceError.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/bdface/exception/FaceError.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/flutter_bdface/bdface/model/AccessToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/bdface/model/AccessToken.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/flutter_bdface/bdface/model/AircraftDetailModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/bdface/model/AircraftDetailModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/flutter_bdface/bdface/model/DynamicParams.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/bdface/model/DynamicParams.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/flutter_bdface/bdface/model/Face.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/bdface/model/Face.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/flutter_bdface/bdface/model/FaceModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/bdface/model/FaceModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/flutter_bdface/bdface/model/Frame.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/bdface/model/Frame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/flutter_bdface/bdface/model/OnlineFaceliveResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/bdface/model/OnlineFaceliveResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/flutter_bdface/bdface/model/RegParams.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/bdface/model/RegParams.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/flutter_bdface/bdface/model/RegResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/bdface/model/RegResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/flutter_bdface/bdface/model/RequestParams.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/bdface/model/RequestParams.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/flutter_bdface/bdface/model/ResponseResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/bdface/model/ResponseResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/flutter_bdface/bdface/parser/AccessTokenParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/bdface/parser/AccessTokenParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/flutter_bdface/bdface/parser/IdentifyParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/bdface/parser/IdentifyParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/flutter_bdface/bdface/parser/OnlineLivenessResultParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/bdface/parser/OnlineLivenessResultParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/flutter_bdface/bdface/parser/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/bdface/parser/Parser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/flutter_bdface/bdface/parser/RegResultParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/bdface/parser/RegResultParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/flutter_bdface/bdface/parser/UploadParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/bdface/parser/UploadParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/flutter_bdface/bdface/parser/UserListParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/bdface/parser/UserListParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/flutter_bdface/bdface/parser/VerifyParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/bdface/parser/VerifyParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/flutter_bdface/bdface/utils/Base64.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/bdface/utils/Base64.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/flutter_bdface/bdface/utils/Base64RequestBody.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/bdface/utils/Base64RequestBody.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/flutter_bdface/bdface/utils/DefaultParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/bdface/utils/DefaultParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/flutter_bdface/bdface/utils/DeviceUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/bdface/utils/DeviceUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/flutter_bdface/bdface/utils/DeviceUuidFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/bdface/utils/DeviceUuidFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/flutter_bdface/bdface/utils/EncryptUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/bdface/utils/EncryptUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/flutter_bdface/bdface/utils/ExifUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/bdface/utils/ExifUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/flutter_bdface/bdface/utils/FileBase64Encoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/bdface/utils/FileBase64Encoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/flutter_bdface/bdface/utils/FileUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/bdface/utils/FileUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/flutter_bdface/bdface/utils/HttpUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/bdface/utils/HttpUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/flutter_bdface/bdface/utils/ImageSaveUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/bdface/utils/ImageSaveUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/flutter_bdface/bdface/utils/ImageUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/bdface/utils/ImageUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/flutter_bdface/bdface/utils/JsonHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/bdface/utils/JsonHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/flutter_bdface/bdface/utils/LogUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/bdface/utils/LogUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/flutter_bdface/bdface/utils/Md5.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/bdface/utils/Md5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/flutter_bdface/bdface/utils/MemoryFileHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/bdface/utils/MemoryFileHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/flutter_bdface/bdface/utils/OnResultListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/bdface/utils/OnResultListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/flutter_bdface/bdface/utils/PreferencesUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/bdface/utils/PreferencesUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/flutter_bdface/bdface/utils/ReflectUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/bdface/utils/ReflectUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/flutter_bdface/bdface/utils/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/bdface/utils/Util.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/flutter_bdface/bdface/widget/BrightnessTools.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/bdface/widget/BrightnessTools.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/flutter_bdface/bdface/widget/DensityUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/bdface/widget/DensityUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/flutter_bdface/bdface/widget/FaceRoundView.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/bdface/widget/FaceRoundView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/flutter_bdface/bdface/widget/WaveHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/bdface/widget/WaveHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/flutter_bdface/bdface/widget/WaveView.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/bdface/widget/WaveView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/res/layout/activity_login_detected.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/res/layout/activity_login_detected.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/baidu/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/Constant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/baidu/FlutterBdfacePlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/FlutterBdfacePlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/baidu/Net.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/Net.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/baidu/bdface/FaceDetectActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/bdface/FaceDetectActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/flutter_bdface.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/flutter_bdface.dart" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.dart_tool/" />
     <ignored path="$PROJECT_DIR$/.idea/" />
@@ -92,18 +34,18 @@
     <session id="1961353984">
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dart" value="36" />
+          <entry key="dart" value="109" />
           <entry key="java" value="7" />
           <entry key="md" value="18" />
-          <entry key="txt" value="32" />
+          <entry key="txt" value="60" />
           <entry key="yaml" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Dart" value="36" />
+          <entry key="Dart" value="109" />
           <entry key="JAVA" value="7" />
-          <entry key="PLAIN_TEXT" value="50" />
+          <entry key="PLAIN_TEXT" value="78" />
           <entry key="YAML" value="13" />
         </counts>
       </usages-collector>
@@ -140,8 +82,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/flutter_bdface.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="90">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -152,8 +94,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/example/lib/main.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-436">
-              <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="52" />
+            <state relative-caret-position="810">
+              <caret line="54" column="6" selection-start-line="54" selection-start-column="6" selection-end-line="54" selection-end-column="6" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -169,7 +114,7 @@
         <entry file="file://$PROJECT_DIR$/android/src/main/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
-              <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+              <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -178,7 +123,7 @@
         <entry file="file://$PROJECT_DIR$/pubspec.yaml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="47">
-              <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+              <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -228,7 +173,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lib/flutter_bdface.dart" />
         <option value="$PROJECT_DIR$/test/flutter_bdface_test.dart" />
         <option value="$PROJECT_DIR$/android/src/main/java/com/flutter_bdface/FlutterBdfacePlugin.java" />
         <option value="$PROJECT_DIR$/example/pubspec.yaml" />
@@ -236,9 +180,10 @@
         <option value="$PROJECT_DIR$/android/build.gradle" />
         <option value="$PROJECT_DIR$/android/.gitignore" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/example/lib/main.dart" />
         <option value="$PROJECT_DIR$/android/src/main/res/layout/activity_login_detected.xml" />
         <option value="$PROJECT_DIR$/pubspec.yaml" />
+        <option value="$PROJECT_DIR$/lib/flutter_bdface.dart" />
+        <option value="$PROJECT_DIR$/example/lib/main.dart" />
       </list>
     </option>
   </component>
@@ -348,7 +293,14 @@
       <option name="project" value="LOCAL" />
       <updated>1555513375120</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="人脸识别环境配置成功。">
+      <created>1555569632707</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1555569632707</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -365,14 +317,14 @@
       <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49757674" weight="0.5153061" />
       <window_info anchor="bottom" id="Build" order="1" weight="0.21923621" />
       <window_info anchor="bottom" id="Dart Analysis" order="2" weight="0.43537414" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49919224" weight="0.3847242" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49919224" visible="true" weight="0.42574257" />
       <window_info anchor="bottom" id="Android Profiler" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.5024233" side_tool="true" weight="0.3894558" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Logcat" order="7" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Flutter Performance" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" visible="true" weight="0.32956153" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32956153" />
       <window_info anchor="bottom" id="Find" order="11" />
       <window_info anchor="bottom" id="Debug" order="12" weight="0.5205092" />
       <window_info anchor="right" id="Preview" />
@@ -391,7 +343,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init commit" />
     <MESSAGE value="update README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="update README.md" />
+    <MESSAGE value="人脸识别环境配置成功。" />
+    <MESSAGE value="人脸识别初步调试成功。" />
+    <option name="LAST_COMMIT_MESSAGE" value="人脸识别初步调试成功。" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/example/lib/permission/permission_manager.dart">
@@ -508,21 +462,21 @@
     <entry file="file://$PROJECT_DIR$/android/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+          <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pubspec.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="47">
-          <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/flutter_bdface.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
           </folding>
@@ -531,8 +485,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/example/lib/main.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-436">
-          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="52" />
+        <state relative-caret-position="810">
+          <caret line="54" column="6" selection-start-line="54" selection-start-column="6" selection-end-line="54" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

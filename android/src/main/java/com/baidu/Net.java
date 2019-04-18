@@ -28,6 +28,7 @@ public class Net {
     private static GsonConverterFactory converterFactory;
     private static OkHttpClient httpClient;
     private static HttpLoggingInterceptor httpLoggingInterceptor;
+    private static AirlookService airlookService;            //登录注册个人资料的service
 
     private static UpLoadImageService upLoadImageService;    //上传图片服务
 
@@ -70,6 +71,18 @@ public class Net {
             upLoadImageService = getService(UpLoadImageService.class);
         }
         return upLoadImageService;
+    }
+
+    /**
+     * 登录接口以及个人资料接口
+     *
+     * @return
+     */
+    public static AirlookService getAirlookService() {
+        if (airlookService == null) {
+            airlookService = getService(AirlookService.class);
+        }
+        return airlookService;
     }
 
     /**
