@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cbec630f-f165-420b-9031-ac8e48dfa19a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/baidu/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/Constant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/baidu/FlutterBdfacePlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/FlutterBdfacePlugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/baidu/Net.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/Net.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/baidu/bdface/FaceDetectActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/baidu/bdface/FaceDetectActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/flutter_bdface.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/flutter_bdface.dart" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.dart_tool/" />
     <ignored path="$PROJECT_DIR$/.idea/" />
@@ -94,8 +88,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/example/lib/main.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="810">
-              <caret line="54" column="6" selection-start-line="54" selection-start-column="6" selection-end-line="54" selection-end-column="6" />
+            <state relative-caret-position="169">
+              <caret line="18" column="11" lean-forward="true" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -188,7 +182,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="y" value="23" />
+    <option name="y" value="97" />
     <option name="width" value="1280" />
     <option name="height" value="703" />
   </component>
@@ -240,6 +234,7 @@
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
@@ -300,7 +295,14 @@
       <option name="project" value="LOCAL" />
       <updated>1555569632707</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="人脸识别初步调试成功。">
+      <created>1555595903187</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1555595903187</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -317,7 +319,7 @@
       <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49757674" weight="0.5153061" />
       <window_info anchor="bottom" id="Build" order="1" weight="0.21923621" />
       <window_info anchor="bottom" id="Dart Analysis" order="2" weight="0.43537414" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49919224" visible="true" weight="0.42574257" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49919224" visible="true" weight="0.26732674" />
       <window_info anchor="bottom" id="Android Profiler" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.5024233" side_tool="true" weight="0.3894558" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -485,8 +487,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/example/lib/main.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="54" column="6" selection-start-line="54" selection-start-column="6" selection-end-line="54" selection-end-column="6" />
+        <state relative-caret-position="169">
+          <caret line="18" column="11" lean-forward="true" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
