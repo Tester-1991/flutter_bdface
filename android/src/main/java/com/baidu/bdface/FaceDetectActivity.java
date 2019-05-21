@@ -132,6 +132,7 @@ public class FaceDetectActivity extends AppCompatActivity {
 
     public static final String REGIST = "regist";                       //注册
     public static final String REGISTFORRESULT = "registForResult";     //注册并返回结果
+    public static final String FLY = "fly";
     public static final String LOGINFORRESULT = "login";                         //登录
 
     @Override
@@ -653,7 +654,7 @@ public class FaceDetectActivity extends AppCompatActivity {
 
 
         // uid应使用你系统的用户id，示例里暂时用用户名
-        String uid = PreferenceUtil.getLong(Constant.USERID) + "";
+        String uid = PreferenceUtil.getString(Constant.USERID);
 
         final File file = new File(filePath);
         if (!file.exists()) {
@@ -738,17 +739,17 @@ public class FaceDetectActivity extends AppCompatActivity {
 
             onRefreshSuccessView(true, true);
 
-//            if (getIntent().getStringExtra(EXTRA_KEY_FROM).equals(AppData.IntentSource.FROM_AREADETAILACTIVITY_FLY)) {
-//
-//                RxBus.getInstance().send(new FlyForFlightModel());
-//
-//                Observable.timer(1000, TimeUnit.MILLISECONDS)
-//                        .subscribe(aLong -> {
-//
-//                            finish();
-//
-//                        });
-//            }
+            if (getIntent().getStringExtra(EXTRA_KEY_FROM).equals(FLY)) {
+
+                FlutterBdfacePlugin.resultData(null);
+
+                Observable.timer(1000, TimeUnit.MILLISECONDS)
+                        .subscribe(aLong -> {
+
+                            finish();
+
+                        });
+            }
         }
     }
 
@@ -907,7 +908,7 @@ public class FaceDetectActivity extends AppCompatActivity {
 //                        intent.putExtra(VerifiedActivity.RESULT_KEY_FACEURL
 //                                , response.body().getData().getDomain() + "/" + response.body().getData().getImageUrl());
 //                        setResult(RESULT_OK, intent);
-                        Log.e("bdface","图片上传成功");
+                        Log.e("bdface", "图片上传成功");
                         Map<String, Object> map = new HashMap<>();
                         map.put("FACETOKEN", faceToken);
                         map.put("FACEURL", response.body().getData().getDomain() + "/" + response.body().getData().getImageUrl());

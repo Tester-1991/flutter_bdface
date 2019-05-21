@@ -12,6 +12,8 @@ public class Constant {
     //token
     public static final String TOKEN = "TOKEN";
 
+    public static final String INTENTKEY = "INTENTKEY";
+
     //需要改动的东西 友盟不需要改变
     public static final String BASEURL = getBASEURL();
 

@@ -22,7 +22,7 @@ public class FlutterBdfacePlugin implements MethodCallHandler {
 
     public static Result flutterResult;
 
-    public static void resultData(Map data){
+    public static void resultData(Map data) {
         flutterResult.success(data);
     }
 
@@ -59,6 +59,9 @@ public class FlutterBdfacePlugin implements MethodCallHandler {
             //设置token
             String token = (String) args.get(Constant.TOKEN);
 
+            //获取intent
+            String intentMessage = (String) args.get(Constant.INTENTKEY);
+
             PreferenceUtil.putString(Constant.TOKEN, token);
 
             BdFaceUtil.getInstance().setContext(PreferenceUtil.context);
@@ -67,7 +70,14 @@ public class FlutterBdfacePlugin implements MethodCallHandler {
 
             Intent intent = new Intent(root, FaceDetectActivity.class);
 
-            intent.putExtra(FaceDetectActivity.EXTRA_KEY_FROM, FaceDetectActivity.REGISTFORRESULT);
+            if (intentMessage.equals(FaceDetectActivity.REGISTFORRESULT)) {
+
+                intent.putExtra(FaceDetectActivity.EXTRA_KEY_FROM, FaceDetectActivity.REGISTFORRESULT);
+
+            } else if (intentMessage.equals(FaceDetectActivity.FLY)) {
+
+                intent.putExtra(FaceDetectActivity.EXTRA_KEY_FROM, FaceDetectActivity.FLY);
+            }
 
             root.startActivity(intent);
         }
