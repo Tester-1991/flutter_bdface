@@ -3,6 +3,7 @@ package com.baidu;
 import android.content.Context;
 import android.os.Handler;
 import android.os.Looper;
+import android.util.Log;
 
 import com.baidu.aip.FaceEnvironment;
 import com.baidu.aip.FaceSDKManager;
@@ -29,9 +30,9 @@ public class BdFaceUtil {
     //百度人脸识别
     private Handler handler = new Handler(Looper.getMainLooper());
 
-    public void setContext(Context context) {
-        this.context = context;
-    }
+//    public void setContext(Context context) {
+//        this.context = context;
+//    }
 
     private BdFaceUtil() {
     }
@@ -47,7 +48,9 @@ public class BdFaceUtil {
 
     }
 
-    public void init() {
+    public void init(Context context) {
+
+        this.context = context;
 
         //如果正在初始化 跳出方法
         if (faceLoading) {
@@ -68,6 +71,7 @@ public class BdFaceUtil {
             @Override
             public void onResult(AccessToken result) {
                 handler.post(() -> {
+                    Log.e("bdface","人脸识别鉴权成功");
                     bdFace = true;
                     faceLoading = false;
                 });

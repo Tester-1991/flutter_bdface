@@ -1,6 +1,8 @@
 package com.baidu;
 
+import android.content.Context;
 import android.content.Intent;
+import android.util.Log;
 
 import com.baidu.bdface.FaceDetectActivity;
 
@@ -22,6 +24,8 @@ public class FlutterBdfacePlugin implements MethodCallHandler {
 
     public static Result flutterResult;
 
+    public static FlutterBdfacePlugin instance = new FlutterBdfacePlugin();
+
     public static void resultData(Map data) {
         flutterResult.success(data);
     }
@@ -30,9 +34,10 @@ public class FlutterBdfacePlugin implements MethodCallHandler {
      * Plugin registration.
      */
     public static void registerWith(Registrar registrar) {
+        Log.e("bdface", "插件注册registerWith");
         flutterRegistrar = registrar;
         final MethodChannel channel = new MethodChannel(registrar.messenger(), "flutter_bdface");
-        channel.setMethodCallHandler(new FlutterBdfacePlugin());
+        channel.setMethodCallHandler(instance);
 
     }
 
@@ -44,29 +49,36 @@ public class FlutterBdfacePlugin implements MethodCallHandler {
         }
         if (call.method.equals("bdface")) {
 
+            Log.e("bdface", "call method bdface");
+
             flutterResult = result;
 
             FlutterActivity root = (FlutterActivity) flutterRegistrar.activity();
             //初始化
-            PreferenceUtil.context = root.getApplicationContext();
+//            PreferenceUtil.context = root.getApplicationContext();
 
             Map<String, Object> args = (Map<String, Object>) call.arguments;
+
             //设置用户id
             String userId = (String) args.get(Constant.USERID);
+
+            Log.e("bdface", "userId-----" + userId);
 
             PreferenceUtil.putString(Constant.USERID, userId);
 
             //设置token
             String token = (String) args.get(Constant.TOKEN);
 
+            Log.e("bdface", "token-----" + token);
+
             //获取intent
             String intentMessage = (String) args.get(Constant.INTENTKEY);
 
+            Log.e("bdface", "INTENTKEY-----" + intentMessage);
+
             PreferenceUtil.putString(Constant.TOKEN, token);
 
-            BdFaceUtil.getInstance().setContext(PreferenceUtil.context);
-
-            BdFaceUtil.getInstance().init();
+//            BdFaceUtil.getInstance().setContext(PreferenceUtil.context);
 
             Intent intent = new Intent(root, FaceDetectActivity.class);
 
@@ -76,10 +88,17 @@ public class FlutterBdfacePlugin implements MethodCallHandler {
 
             } else if (intentMessage.equals(FaceDetectActivity.FLY)) {
 
+                Log.e("bdface", "跳转人脸识别界面,FLY");
+
                 intent.putExtra(FaceDetectActivity.EXTRA_KEY_FROM, FaceDetectActivity.FLY);
             }
 
             root.startActivity(intent);
         }
+    }
+
+    public void init(Context context) {
+        PreferenceUtil.context = context;
+        BdFaceUtil.getInstance().init(context);
     }
 }

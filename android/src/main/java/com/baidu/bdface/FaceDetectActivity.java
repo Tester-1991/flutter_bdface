@@ -839,7 +839,7 @@ public class FaceDetectActivity extends AppCompatActivity {
      */
     public void initBdFace() {
         if (!BdFaceUtil.getInstance().isBdFace()) {
-            BdFaceUtil.getInstance().init();
+            BdFaceUtil.getInstance().init(this);
         }
     }
 
@@ -918,6 +918,7 @@ public class FaceDetectActivity extends AppCompatActivity {
                         addFaceInfo(faceToken, response.body().getData().getDomain() + "/" + response.body().getData().getImageUrl());
                     }
                 } else {
+                    Log.e("bdface", "图片上传失败" + response.code());
                     onRefreshSuccessView(true, false);
                     hideResultdelay();
                 }
@@ -925,6 +926,7 @@ public class FaceDetectActivity extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<BaseModel<UpLoadingModel>> call, Throwable t) {
+                Log.e("bdface", t.getMessage());
                 onRefreshSuccessView(true, false);
                 hideResultdelay();
             }
