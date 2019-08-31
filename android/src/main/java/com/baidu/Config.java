@@ -30,10 +30,10 @@ public class Config {
     public static String getGroupId(){
 
 
-            return "airspaceTest";
+//            return "airspaceTest";
 
 
-//            return "airspaceios1";
+            return "airspaceios1";
     }
 
 }

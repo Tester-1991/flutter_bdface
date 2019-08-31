@@ -17,9 +17,6 @@ public class Constant {
     //需要改动的东西 友盟不需要改变
     public static final String BASEURL = getBASEURL();
 
-    //websocket的地址
-    public static final String WEBSOCEKTURL = getWEBSOCEKTURL();
-
     //友盟appKey
     public static final String UMAPPKEY = "5b95e220b27b0a6669000125";
 
@@ -125,38 +122,11 @@ public class Constant {
 
         if (BuildConfig.DEBUG) {
             Log.e("bdface","BuildConfig.DEBUG");
-            return "http://testapp.airspace.cn/api/";
+//            return "http://testapp.airspace.cn/api/";
+            return "http://app.airspace.cn/api/";
         } else {
             Log.e("bdface","BuildConfig.RELEASE");
             return "http://app.airspace.cn/api/";
-        }
-    }
-
-    /**
-     * wms地址
-     */
-    public static String getWMSBASEURL() {
-
-        if (BuildConfig.DEBUG) {
-
-            return "http://map-api-test.airspace.cn/";
-        } else {
-
-            return "http://map-api.airspace.cn/";
-        }
-    }
-
-    /**
-     * websocket地址
-     */
-    public static String getWEBSOCEKTURL() {
-
-        if (BuildConfig.DEBUG) {
-
-            return "http://testapp.airspace.cn/api/message/notice/";
-        } else {
-
-            return "http://app.airspace.cn/api/message/notice/";
         }
     }
 }
